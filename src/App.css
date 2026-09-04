@@ -1,0 +1,18 @@
+/* /* @import "tailwindcss";
+
+/* Tambahkan blok ini ke src/App.css (atau src/index.css) */
+/* 
+.disp { font-family: 'Fraunces', serif; }
+.quotemark { font-family: 'Fraunces', serif; }
+.hr { border-color: #D9CFB8; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.marquee-track { display: flex; width: max-content; animation: marquee 28s linear infinite; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+} */
+
+/* .bottom-bar { padding-bottom: env(safe-area-inset-bottom); } */  

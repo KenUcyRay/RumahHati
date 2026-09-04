@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Token warna & font kustom — pengganti tailwind.config.js di Tailwind v4 */
+@theme {
+  --color-paper: #F5F1E7;
+  --color-paper-100: #FBF9F4;
+  --color-ink: #17231D;
+  --color-ink-700: #26332B;
+  --color-ink-500: #4C594E;
+  --color-stone: #D9CFB8;
+  --color-brass: #9C7A45;
+  --color-brass-600: #7E6237;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+}
+
+/* Class pendukung yang dipakai App.jsx, tidak bisa dibuat lewat utility saja */
+.disp,
+.quotemark {
+  font-family: 'Fraunces', serif;
+}
+
+.hr {
+  border-color: #D9CFB8;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.bottom-bar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
